@@ -5,6 +5,7 @@ const app = express()
 //router
 app.use('/places', require('./controllers/places'))
 
+//homepage
 app.get('/', (req, res) => {
     res.send('Hello world!')
 })
