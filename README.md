@@ -2,11 +2,12 @@
 
 RESTrant is an app where users can review restaurants.
 
-Color Palette
+### Color Palette
 BCC8C5
 CC8B86
 F9EAE1
 
+### Routes
 | Method    |                      Path |                                          Purpose |
 |-----------|---------------------------|--------------------------------------------------|
 | GET       |                      /    |                                         Home page|
@@ -20,3 +21,24 @@ F9EAE1
 | POST      | /places/:id/rant          | Creat a rant (comment) about a particular place  |
 | DELETE    | /places/:id/rant/rantId   | Delete a rant (comment) about a particular place |
 | GET       | *                         | 404 page (matches any route not defined above)   |
+
+### Data
+
+|Field      | Type          |
+|-----------|---------------|
+|name       |String         |
+|city       |String         |
+|state      |String         |
+|cuisines   |String         |
+|pic        |String         |
+
+### Rants
+
+|Field      | Type                 |
+|-----------|----------------------|
+|_id        |Object ID             |    
+|place_id   |ref(places) Object_Id |
+|rant       |Boolean               |
+|rating     |Number                |
+|comment    |String                |
+|reviewer   |String                |
