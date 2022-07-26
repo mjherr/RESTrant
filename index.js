@@ -20,7 +20,6 @@ app.get('/', (req, res) => {
 
 //GET /places
 app.get('/', (req, res) => {
-    let places =[]
     res.render('place/index')
 })
 
